@@ -29,7 +29,7 @@
     <ul>
           {{ range .Site.Menus.main}}
         <li>Hello</li>
-
+         <li> {{.Site.Files}}</li>
         <li> {{.}}</li>
         <li>{{ readDir "{{.}}" }}</li>
         <li>{{.Name}}</li>
