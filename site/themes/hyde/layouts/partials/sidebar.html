@@ -6,12 +6,13 @@
       <p class="lead">
       <a href="https://github.com/alexis2113/gelly"> Github</a>
       </p>
+      
     </div>
 
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
     {{ range .Site.Sections}}
-        <li> <a href="{{ .File.Path}}">{{.}}</a></li>
+        <li> <a href="{{ .File.Path}}">{{.Name}}</a></li>
         <li>{{ (readDir ".") }}</li>
         <li>{{.Name}}</li>
      {{end}}
