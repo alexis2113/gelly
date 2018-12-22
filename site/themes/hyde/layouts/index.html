@@ -27,10 +27,11 @@
  
 <p> 
     <ul>
+          {{ range .Site.Menus.main}}
         <li>Hello</li>
-  {{ range .Site.Menus.main}}
+
         <li> {{.}}</li>
-        <li>{{ (readDir ".") }}</li>
+        <li>{{ readDir "{{.}}" }}</li>
         <li>{{.Name}}</li>
      {{end}}
     </ul>    
