@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title id="main">Title</title>
+</head>
+
+<body>
+
+    <div id="eg1">
+        <p>no idea what </p>
+        no idea what the fuck
+    </div>
+
+
+
+    <div id="eg2">
+        just another example to make this part bold by changeing the html codes
+    </div>
+
+
+    <p>
+        This is an R HTMLdocument. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+        D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
+    </p>
+
+    <p>
+        D3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3's functional style allows code reuse through a diverse collection of official and community-developed modules.D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an
+        interactive SVG bar chart with smooth transitions and interaction.
+    </p>
+
+    
+
+
+
+    <p>
+        is is an R HTML document. When you click
+        <span>the part inside span</span>
+        slkajdlsjdoasjd
+    </p>
+
+    <p>You can also embed plots, for example:</p>
+
+    <h3>irreversible</h3>
+
+    <input type="submit" id="ex1" value="example1">
+
+    <button id="undo">Undo</button>
+
+
+
+    <div id="e3">
+        <h3>
+            appending and removing elements
+        </h3>
+
+        <ul id="mylist">
+            <li>item1</li>
+            <li>item2</li>
+        </ul>
+
+        <button id="adds" value="default" type="submit">add</button>
+        <button id="delete">delete</button>
+
+        <p>
+            D3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3's functional style allows code reuse through a diverse collection of official and community-developed modules.D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
+        </p>
+
+        <p>
+            D3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3’s functional style allows code reuse through a diverse collection of official and community-developed modules.D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+    <h2>D3scrpits below</h2>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script>
+        let mybox = "empty";
+        let plaze = [];
+
+        d3.select("#example1")
+            .on("click", function () {
+                // this is the body of the function that would be executed after the click
+                let myselect = d3.select("#eg1");
+                plaze = myselect;
+                mybox = myselect.html();
+                d3.select("#eg1")
+                    .text("changed the content");
+            });
+
+        d3.select("#undo")
+            .on("click", function () {
+                plaze.html(mybox);
+            });
+
+    </script>
+
+   <script>
+
+
+        function counts() {
+            return d3.select("#mylist")
+                     .selectAll("li")
+                     .size();
+            
+        }
+
+        d3.select("#adds")
+            .on("click", function(){
+                d3.select("#mylist")
+                    .append("li")
+                    .text("item"+counts());
+
+            });
+
+
+        d3.select("#delete")
+            .on("click", function () {
+                d3.select("#mylist")
+                    .select("li:last-child")
+                    .remove();
+
+            })
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
+
