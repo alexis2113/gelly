@@ -6,31 +6,27 @@
     <div class="content container">
 <div class="posts">
 
-      {{ range .Site.Menus.main}}
-  <div class="post">
+ {{ range .Site.Menus.main}}
+
     <h1 class="post-title">
       <a href="{{ .Permalink }}">
-        {{ .Section }}
-      </a>
+        {{ .Parent }}</a>
     </h1>
-
-    <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-
-  </div>
-  {{ end }}
-</div>
-</div>
+ {{ end }}
 <nav class="sidebar-nav">
   {{ range .Site.Menus.main }}
     <a href="{{ .URL }}" title="{{ .Title }}">
       {{- .Name -}}
       {{- with .Page -}}
-        <span class="date">
-        {{- dateFormat " (2006-01-02)" .Date -}}
-        </span>
+       
       {{- end -}}
     </a>
   {{ end }}
 </nav>
+
+</div>
+ 
+
+
   </body>
 </html>
