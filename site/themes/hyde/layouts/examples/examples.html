@@ -1,5 +1,46 @@
-<html>
-  <body>
-</h1>{{.Site.URL}}</h1>
-</body>
+{{ partial "head.html" . }}
+<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+
+{{ partial "sidebar.html" . }}
+
+  
+
+      
+  <p>
+
+ {{ range .Site.Menus.main}}
+
+    <h1 class="post-title">
+      <a href="{{ .Permalink }}">
+        {{ .Parent }}</a>
+    </h1>
+ {{ end }}
+  </p>
+      
+<p>
+  {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" title="{{ .Title }}">
+      {{- .Name -}}
+      {{- with .Page -}}      
+      {{- end -}}
+    </a>
+  {{ end }}
+
+
+</p>
+ 
+<p> 
+    <ul>
+          {{ range .Site.Menus.main}}
+        <li>Hello</li>
+         <li> {{.Site.Files}}</li>
+        <li> {{.}}</li>
+        <li>{{ readDir "{{.}}" }}</li>
+        <li>{{.Name}}</li>
+     {{end}}
+    </ul>    
+        </p>
+
+  </body>
 </html>
+
