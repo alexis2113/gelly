@@ -11,6 +11,7 @@
 
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
+      <li><a href="/examples/one">exam</a></li>
     {{ range .Site.Sections}}
         <li> <a href="{{ .File.Path}}">{{.Name}}</a></li>
         <li>{{ (readDir ".") }}</li>
