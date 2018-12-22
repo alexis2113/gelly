@@ -27,8 +27,9 @@
  
 <p> 
     <ul>
-  {{ range .Site.Sections}}
-        <li> <a href="{{ .File.Path}}">{{.}}</a></li>
+        <li>Hello</li>
+  {{ range .Site.Menus.main}}
+        <li> {{.}}</li>
         <li>{{ (readDir ".") }}</li>
         <li>{{.Name}}</li>
      {{end}}
