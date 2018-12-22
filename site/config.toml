@@ -18,8 +18,8 @@ theme = "hyde"
     weight = -110
 
  [[menu.posts]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/posts/"
+    identifier = "post"
+    name = "post"
+    title = "post"
+    url = "/post/"
     weight = -110
