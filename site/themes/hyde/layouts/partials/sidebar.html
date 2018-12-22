@@ -10,11 +10,11 @@
 
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
-      {{ range .Site.Sections}}
+    {{ range .Site.Sections}}
         <li> <a href="{{ .File.Path}}">{{.}}</a></li>
         <li>{{ (readDir ".") }}</li>
         <li>{{.Name}}</li>
-      {{end}}
+     {{end}}
     </ul>
  
     
