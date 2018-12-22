@@ -1,7 +1,5 @@
 ---
-
-parent:examples
-menu:
-  examples:
-     title:another
+title:hello
+  
 ---
+example template
