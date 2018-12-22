@@ -6,11 +6,11 @@
     <div class="content container">
 <div class="posts">
 
-      {{ range .Site.Menus.Sections }}
+      {{ range .Site.Menus.main}}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ .Permalink }}">
-        {{ .Sections }}
+        {{ .Section }}
       </a>
     </h1>
 
