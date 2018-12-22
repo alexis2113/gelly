@@ -1,5 +1,4 @@
----
++++
 title:hello
-  
----
++++
 example template
