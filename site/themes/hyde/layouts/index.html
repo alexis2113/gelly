@@ -17,8 +17,7 @@
   {{ range .Site.Menus.main }}
     <a href="{{ .URL }}" title="{{ .Title }}">
       {{- .Name -}}
-      {{- with .Page -}}
-       
+      {{- with .Page -}}      
       {{- end -}}
     </a>
   {{ end }}
@@ -26,7 +25,7 @@
 
 </div>
  
-
+<p>Home Page</p>
 
   </body>
 </html>
