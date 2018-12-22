@@ -8,18 +8,6 @@ theme = "hyde"
   
   
   
-[menu]
 
-  [[menu.blogs]]
-    identifier = "blogs"
-    name = "blogs"
-    title = "blogs"
-    url = "/blogs/"
-    weight = -110
 
- [[menu.posts]]
-    identifier = "post"
-    name = "post"
-    title = "post"
-    url = "/post/"
-    weight = -110
+ 
