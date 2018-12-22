@@ -30,8 +30,8 @@
           {{ range .Site.Menus.main}}
         <li>Hello</li>
          <li> {{.Site.Files}}</li>
-        <li> {{.}}</li>
-        <li>{{ readDir "{{.}}" }}</li>
+          <xmp>{{.}}</xmp>
+        <li>{{if .PrevPage}}{{.PrevPage.Permalink}}{{end}}</li>
         <li>{{.Name}}</li>
      {{end}}
     </ul>    
