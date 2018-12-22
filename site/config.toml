@@ -12,7 +12,14 @@ theme = "hyde"
 
   [[menu.blogs]]
     identifier = "blogs"
-    name = "This is the blog section"
-    title = "blog section"
+    name = "blogs"
+    title = "blogs"
     url = "/blogs/"
+    weight = -110
+
+ [[menu.posts]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts/"
     weight = -110
