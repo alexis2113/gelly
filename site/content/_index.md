@@ -1,7 +1,8 @@
 ---
 
 menu:
-  blogs:
-  post:
-  examples:
+  sections:
+    blogs
+    post
+    examples
 ---
