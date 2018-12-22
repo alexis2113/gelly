@@ -25,7 +25,15 @@
 
 </div>
  
-<p>Home Page</p>
+<p> 
+    <ul>
+  {{ range .Site.Sections}}
+        <li> <a href="{{ .File.Path}}">{{.}}</a></li>
+        <li>{{ (readDir ".") }}</li>
+        <li>{{.Name}}</li>
+     {{end}}
+    </ul>    
+        </p>
 
   </body>
 </html>
