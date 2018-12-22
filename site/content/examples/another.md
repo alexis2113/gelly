@@ -1,4 +1,2 @@
-+++
-title:hello
-+++
+
 example template
