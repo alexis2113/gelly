@@ -1,3 +1,4 @@
+
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
@@ -10,7 +11,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       {{ range .Site.Sections}}
-        <li><a href="{{.URL}}"> {{ .Title }} </a></li>
+        <li> {{ .}} </li>
       {{end}}
     </ul>
       <a href="https://github.com/alexis2113/gelly"> Github</a>
