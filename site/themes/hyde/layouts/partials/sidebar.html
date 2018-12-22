@@ -9,8 +9,8 @@
 
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
-      {{ range .Site.Menus.main }}
-        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+      {{ range .Site.Menus.Sections }}
+        <li><a href="{{.URL}}"> {{ .Title }} </a></li>
       {{end}}
     </ul>
       <a href="https://github.com/alexis2113/gelly"> Github</a>
