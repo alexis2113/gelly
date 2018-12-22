@@ -1,1 +1,1 @@
-{{.Contents}}
+{{ $paginator := .Paginate (where .Pages "Type" "post") 5 }}
