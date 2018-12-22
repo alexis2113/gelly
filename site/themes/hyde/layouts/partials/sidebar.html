@@ -11,8 +11,13 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       {{ range .Site.Sections}}
-        <li> {{ .}} </li>
+        <li> <a href="{{ .File.Path}}"></a>ll</li>
       {{end}}
+    </ul>
+    <ul>
+    {{ range (readDir ".") }}
+      <li>{{ .Name }}</li>
+      {{ end }}
     </ul>
       <a href="https://github.com/alexis2113/gelly"> Github</a>
     <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
