@@ -5,3 +5,14 @@ theme = "hyde"
 
 [params]
   themeColor = "theme-base-09"
+  
+  
+  
+[menu]
+
+  [[menu.blogs]]
+    identifier = "blogs"
+    name = "This is the blog section"
+    title = "blog section"
+    url = "/blogs/"
+    weight = -110
