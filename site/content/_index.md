@@ -1,0 +1,7 @@
+---
+
+menu:
+  blogs:
+  post:
+  examples:
+---
