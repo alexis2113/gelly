@@ -1,8 +1,9 @@
+<html>
+<body>
 Hello,this is home page
 {{.Content}}
-
-{{range .Pages}}
-<ul>
-<li><a herf="{{.URL}}">{{.Title}}</a></li>
- </ul> 
+{{range .Site.AllPages}}
+<h2><a herf="{{.URL}}">{{.Title}}</a></h2>
 {{end}}
+</body>
+ </html>
