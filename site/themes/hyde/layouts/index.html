@@ -23,19 +23,18 @@
   {{ end }}
 </nav>
 
-</div>
+
  
 <p> 
     <ul>
           {{ range .Site.Menus.main}}
         <li>Hello</li>
-         <li> {{.Site.Files}}</li>
-          <xmp>{{.}}</xmp>
+        
         <li>{{if .PrevPage}}{{.PrevPage.Permalink}}{{end}}</li>
         <li>{{.Name}}</li>
      {{end}}
     </ul>    
         </p>
-
+</div>
   </body>
 </html>
