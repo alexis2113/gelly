@@ -14,27 +14,17 @@
     </h1>
  {{ end }}
 <nav class="sidebar-nav">
-  {{ range .Site.Menus.main }}
-    <a href="{{ .URL }}" title="{{ .Title }}">
-      {{- .Name -}}
-      {{- with .Page -}}      
-      {{- end -}}
-    </a>
-  {{ end }}
-</nav>
 
-
- 
 <p> 
     <ul>
-          {{ range .Site.Menus.main}}
+     
         <li>Hello</li>
-        
-        <li>{{if .PrevPage}}{{.PrevPage.Permalink}}{{end}}</li>
-        <li>{{.Name}}</li>
-     {{end}}
-    </ul>    
-        </p>
+        <li>{{with .PrevPage}}{{.PrevPage.Permalink}}{{end}}</li>
+        <li>{{.Site.Home}}</li>
+
+    </ul>   
+     </p>
+ </nav>      
 </div>
   </body>
 </html>
