@@ -1,18 +1,17 @@
 {{ partial "head.html" .}}
 <body class="{{ .Site.Params.themeColor }}">
  		{{ partial "sidebar.html" . }}
- 
-  		<div class="content container">
- 			<div class="post">
- 			Hello,this is home page
+ <div class="content container">
+ <div class="post">
+
 
 {{range .Site.AllPages}}
-<h2>{{.Title}}</h2>
+<h3>{{.Title}}</h3>
 {{end}}
- 			</div>
+</div>
  
   
- 				{{ partial "disqus" . }}
+{{ partial "disqus" . }}
 
 
  
