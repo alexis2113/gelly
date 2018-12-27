@@ -8,14 +8,16 @@
 {{range .Site.AllPages}}
 <h3>{{.Title}}</h3>
 {{end}}
- <ul>
-  {{ range (where .Data.Pages "Section" "!=" "") }}
+
+<ul>
+ {{ range (where .Data.Pages "Section" "!=" "") }}
   <li>
   {{ .Section }}
   </li>
   {{ end }}
 </ul>
 
+ <ul>
   {{ range .Pages.Section}}
   <li>
   {{ .Name }}
@@ -24,7 +26,7 @@
 </ul>
 </div>
  
-  
+</div>  
 {{ partial "disqus" . }}
 
 
