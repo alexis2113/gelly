@@ -11,7 +11,7 @@
  <ul>
   {{ range (where .Data.Pages "Section" "!=" "") }}
   <li>
-  {{ .Title }}
+  {{ .Section }}
   </li>
   {{ end }}
 </ul>
