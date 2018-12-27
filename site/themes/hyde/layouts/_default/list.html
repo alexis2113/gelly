@@ -5,7 +5,7 @@
 
   <div class="content container">
     <ul class="posts">
-        {{ range .Site }}
+        {{ range .Site.Pages }}
         <li>{{ .Title }}</li>
         {{ end }}
     </ul>
