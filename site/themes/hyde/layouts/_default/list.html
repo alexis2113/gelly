@@ -5,10 +5,8 @@
 
   <div class="content container">
     <ul class="posts">
-        {{ range .Site.Menus }}
-        <li>
-          <span><a href="{{ .Permalink }}">{{ .Sections.Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
-        </li>
+        {{ range .Site }}
+        <li>{{ .Title }}</li>
         {{ end }}
     </ul>
   </div>
