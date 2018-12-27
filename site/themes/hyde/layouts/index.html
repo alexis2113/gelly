@@ -4,11 +4,7 @@
  <div class="content container">
 
 
-<p>
-{{range .Site.AllPages}}
-<h3>{{.Title}}</h3>
-{{end}}
-</p>
+
 
  {{ range (where .Data.Pages "Section" "!=" "") }}
   <h4>
