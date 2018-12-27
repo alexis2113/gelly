@@ -4,11 +4,9 @@
 {{ partial "sidebar.html" . }}
 
   <div class="content container">
-    <ul class="posts">
-        {{ range .Site.Pages }}
-        <li>{{ .Title }}</li>
-        {{ end }}
-    </ul>
+   <h2>{{ .Title }}</h2>
+      
+  
   </div>
 </body>
 </html>
