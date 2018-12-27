@@ -4,26 +4,19 @@
  <div class="content container">
 
 
-
+<p>
 {{range .Site.AllPages}}
 <h3>{{.Title}}</h3>
 {{end}}
+</p>
 
-<ul>
  {{ range (where .Data.Pages "Section" "!=" "") }}
-  <li>
+  <h4>
   {{ .Section }}
-  </li>
+  </h4>
   {{ end }}
-</ul>
 
- <ul>
-  {{ range .Pages.Section}}
-  <li>
-  {{ .}}
-  </li>
-  {{ end }}
-</ul>
+
 
  
 </div>  
