@@ -8,6 +8,13 @@
 {{range .Site.AllPages}}
 <h3>{{.Title}}</h3>
 {{end}}
+ <ul>
+  {{ range (where .Data.Pages "Section" "!=" "") }}
+  <li>
+  {{ .Title }}
+  </li>
+  {{ end }}
+</ul>
 </div>
  
   
