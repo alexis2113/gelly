@@ -12,10 +12,9 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       
-    {{ range .Site.Sections}}
-     
-        <li>{{ (readDir ".") }}</li>
-        <li>{{.Name}}</li>
+    {{range .Site.Sections}}
+    <li>{{.}}</li>
+       
      {{end}}
     </ul>
  
