@@ -3,10 +3,11 @@
 <p>This is me</p>
 {{ partial "sidebar.html" . }}
 
-  <div class="content container">
-   <h2>{{ .Title }}</h2>
-  <p class="content">this is list.html</p>  
+  <div class="page">
   
+  {{range .Pages}}
+     <h2>{{ .Title }}</h2>
+    {{end}}
   </div>
 </body>
 </html>
