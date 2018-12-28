@@ -1,10 +1,11 @@
 
 <div class="sidebar">
   <div class="container sidebar-sticky">
- 
+ <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
       <h4><a href="/">Home</a> </h4>
       <a href="https://github.com/alexis2113/gelly"> Github</a>
+   </div>  
     {{ range (where .Data.Pages "Section" "!=" "") }}<h4>{{ .Section }}</h4>{{ end }}
   
 
