@@ -9,16 +9,23 @@
       
    
 
-    <ul >
-      <li><a href="/">Home</a> </li>
+      {{range .Site.RegularPages}}
+      <h5>{{.Title}}</h5>
+     {{end}}
+      
+    <h4><a href="/">Home</a> </h4>
       
    {{ range (where .Data.Pages "Section" "!=" "") }}
   <h4>
   {{ .Section }}
   </h4>
   {{ end }}
-
-    </ul>
+ 
+  {{ range .Sections }}
+         <h4>
+ {{ .Name }}
+  </h4>
+  {{ end }}
   </div>
     
      
