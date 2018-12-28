@@ -3,10 +3,10 @@
   <div class="container sidebar-sticky">
  
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
-      
+      <h4><a href="/">Home</a> </h4>
       <a href="https://github.com/alexis2113/gelly"> Github</a>
     {{ range (where .Data.Pages "Section" "!=" "") }}<h4>{{ .Section }}</h4>{{ end }}
-  <h4><a href="/">Home</a> </h4>
+  
 
     {{range .Site.RegularPages}} <h5>{{.Title}}</h5>{{end}}
 
