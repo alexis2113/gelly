@@ -6,14 +6,14 @@
       <p class="lead">
       <a href="https://github.com/alexis2113/gelly"> Github</a>
       </p>
-      
-   
+    </div> 
+    <h4><a href="/">Home</a> </h4>
 
-      {{range .Site.RegularPages}}
+    {{range .Site.RegularPages}}
       <h5>{{.Title}}</h5>
      {{end}}
       
-    <h4><a href="/">Home</a> </h4>
+   
       
    {{ range (where .Data.Pages "Section" "!=" "") }}
   <h4>
@@ -26,7 +26,7 @@
  {{ .Name }}
   </h4>
   {{ end }}
-  </div>
+  
     
      
     <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
